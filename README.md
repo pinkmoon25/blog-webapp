@@ -1,11 +1,31 @@
-# Blog app 
+### Blog App 📝
 
-A blog website developed with Ruby on Rails and Postgresql.
+A Ruby on Rails blog application featuring robust user and permissions management through CanCanCan. The app allows users to create, manage, and interact with blog posts and comments, with role-based access control.
 
-## Built With
+### Features:
+- **User Authentication and Authorization:**
+  - **Public Access:** All users can read any post.
+  - **Authenticated Users:** Can create and manage their own posts and comments.
+  - **Admin Users:** Have full control over all posts and comments, including management of other users’ content.
 
+- **Post Management:**
+  - **Create, Edit, and Delete Posts:** Users can manage their own posts, while admins can manage all posts.
+  - **Categorization:** Supports categorizing posts based on user-defined criteria.
+
+- **Comment Management:**
+  - **Create and Manage Comments:** Users can create comments on posts. Authors can manage their own comments, while admins can manage all comments.
+
+- **Role-Based Access Control:**
+  - Uses CanCanCan for defining user permissions, allowing fine-grained control over what users can do based on their role.
+
+- **Responsive Design:** Designed with a focus on user experience across different devices.
+
+### Built With:
 - Ruby on Rails
 - PostgreSQL
+- CanCanCan for authorization
+
+---
 
 ## Getting Started
 
